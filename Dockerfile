@@ -25,3 +25,4 @@ EXPOSE 8000
 
 # Start Laravel app
 CMD php artisan serve --host=0.0.0.0 --port=8000
+#123ally
