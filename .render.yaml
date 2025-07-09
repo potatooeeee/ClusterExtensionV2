@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: cluster-extension
+    env: docker
+    plan: free
+    repo: https://github.com/potatooeeee/ClusterExtensionV2
+    branch: main
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        value: base64:zN+ApQUMc93Qz+InFbATyi2mt7WhhHhRMV4ohAQybsA=
+      - key: APP_DEBUG
+        value: false
+      - key: DB_CONNECTION
+        value: pgsql
+      # Add your DB config here (Render PostgreSQL service required)
