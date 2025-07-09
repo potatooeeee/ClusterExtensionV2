@@ -106,6 +106,6 @@
     <p class="loading-text">Loading, please wait...</p>
   </div>
 
-  <script src="{{ asset('js/script.js') }}"></script>
+  <script src="{{ secure_asset('js/script.js') }}"></script>
 </body>
 </html>
